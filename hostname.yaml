@@ -1,0 +1,8 @@
+---
+- hosts: "{{ hostname }}"
+  gather_facts: no
+  tasks:
+  - name: Set a hostname specifying strategy
+    ansible.builtin.hostname:
+      name: "{{ hostname }}"
+      use: systemd
