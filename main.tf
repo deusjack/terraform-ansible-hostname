@@ -1,6 +1,6 @@
 resource "ansible_playbook" "hostname" {
   name                    = var.hostname
-  playbook                = "${path.root}/../ansible/hostname.yaml"
+  playbook                = "${path.root}/hostname.yaml"
   replayable              = false
   ignore_playbook_failure = false
   lifecycle {
@@ -10,7 +10,7 @@ resource "ansible_playbook" "hostname" {
 
 resource "ansible_playbook" "hostid" {
   name                    = var.hostname
-  playbook                = "${path.root}/../ansible/run_command.yaml"
+  playbook                = "${path.root}/run_command.yaml"
   replayable              = false
   ignore_playbook_failure = false
   extra_vars = {
