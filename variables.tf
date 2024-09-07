@@ -7,5 +7,4 @@ variable "hostname" {
 variable "hostid" {
   type        = string
   description = "HostID: 8 digit hex or decimal number."
-  default     = "random"
 }

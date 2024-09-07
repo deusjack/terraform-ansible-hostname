@@ -20,6 +20,6 @@ resource "null_resource" "run_command" {
 
 resource "null_resource" "variables" {
   triggers = {
-    hostid = local.hostid
+    hostid = var.hostid
   }
 }

@@ -4,6 +4,6 @@ output "hostname" {
 }
 
 output "hostid" {
-  value       = local.hostid
+  value       = var.hostid
   description = "The applied HostID"
 }
